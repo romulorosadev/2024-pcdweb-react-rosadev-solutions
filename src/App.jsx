@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h1>Rosadev Solution</h1>
+      <h1>Rosadev Solutions</h1>
       <h2>Desenvolvimento Full Stack</h2>
       <h3>Projeto React JS</h3>
     </>
