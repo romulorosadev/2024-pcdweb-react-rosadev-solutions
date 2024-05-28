@@ -1,13 +1,26 @@
-import React from 'react'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 
 function App() {
 
+  const [contador, setContador] = useState(0);
+
+  const incrementar = () => {
+    setContador(contador + 1);
+  }
+
+
+  const decrementar = () => {
+    setContador(contador - 1);
+  }
+
   return (
     <>
-      <h1>Rosadev Solutions</h1>
-      <h2>Desenvolvimento Full Stack</h2>
-      <h3>Projeto React JS</h3>
+      <p>Vc clicou {contador} vezes</p>
+
+      <button onClick={incrementar}>+</button>
+
+      <button onClick={decrementar}>-</button>
     </>
   )
 }
